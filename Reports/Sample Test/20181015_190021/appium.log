@@ -1,0 +1,5 @@
+2018-10-15 09:59:57:069 - info: [Appium] Welcome to Appium v1.8.1 (REV a33909737958ca807e4b1c2791a1f137fc489c3d)
+2018-10-15 09:59:57:072 - info: [Appium] Non-default server args:
+2018-10-15 09:59:57:072 - info: [Appium]   log: /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/appium.log
+2018-10-15 09:59:57:112 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2018-10-15 10:01:16:446 - info: [Appium] Received SIGINT - shutting down
