@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sample Test" time="24" tests="1" failures="0" errors="0">
+   <testsuite name="Sample Test" tests="1" failures="0" errors="0" time="24" timestamp="2018-10-15 17:14:07" hostname="satoshiisemura - 192.168.10.3" id="Test Suites/Sample Test">
+      <properties>
+         <property name="deviceName" value="emulator-5554 (Android SDK built for x86 - Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181015_171402"/>
+         <property name="logFiles" value="/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181015_171402/appium.log, /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181015_171402/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="satoshiisemura - 192.168.10.3"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.8.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.8.1"/>
+         <property name="deviceModel" value="Android SDK built for x86"/>
+         <property name="hostAddress" value="192.168.10.3"/>
+         <property name="deviceManufacturer" value="Google"/>
+         <property name="deviceId" value="emulator-5554"/>
+         <property name="deviceName" value="emulator-5554 (Android SDK built for x86 - Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Sample" classname="Test Cases/Sample" status="PASSED">
+         <system-out><![CDATA[2018-10-15 17:14:09 - [TEST_CASE][PASSED] - Test Cases/Sample: Test Cases/Sample
+
+2018-10-15 17:14:09 - [TEST_STEP][PASSED] - Statement - appPath = com.kms.katalon.core.util.internal.PathUtil.relativeToAbsolutePath(G_AndroidApp, com.kms.katalon.core.configuration.RunConfiguration.getProjectDir()): null
+
+2018-10-15 17:14:09 - [TEST_STEP][PASSED] - startApplication: Started app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk'
+
+2018-10-15 17:14:27 - [MESSAGE][PASSED] - Started app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk'
+
+2018-10-15 17:14:27 - [TEST_STEP][PASSED] - Statement - message = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Application/App/Activity/ActivityMain/message): Finding Test Object with id 'Object Repository/Application/App/Activity/ActivityMain/message'
+
+2018-10-15 17:14:27 - [TEST_STEP][PASSED] - Statement - navButton = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Application/App/Activity/ActivityMain/navButton): Finding Test Object with id 'Object Repository/Application/App/Activity/ActivityMain/navButton'
+
+2018-10-15 17:14:27 - [TEST_STEP][PASSED] - Statement - button = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Application/App/Activity/ActivityMain/button): Finding Test Object with id 'Object Repository/Application/App/Activity/ActivityMain/button'
+
+2018-10-15 17:14:27 - [TEST_STEP][PASSED] - Statement - messageText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(message, 10): Text of element 'Object Repository/Application/App/Activity/ActivityMain/message' is: 'Home'
+
+2018-10-15 17:14:28 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/App/Activity/ActivityMain/message' is: 'Home'
+
+2018-10-15 17:14:28 - [TEST_STEP][PASSED] - verifyEqual: Actual object 'Home' and expected object 'Home' are equal
+
+2018-10-15 17:14:28 - [MESSAGE][PASSED] - Actual object 'Home' and expected object 'Home' are equal
+
+2018-10-15 17:14:28 - [TEST_STEP][PASSED] - tap: Tapped on element 'Object Repository/Application/App/Activity/ActivityMain/navButton'
+
+2018-10-15 17:14:30 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/App/Activity/ActivityMain/navButton'
+
+2018-10-15 17:14:30 - [TEST_STEP][PASSED] - Statement - messageText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(message, 10): Text of element 'Object Repository/Application/App/Activity/ActivityMain/message' is: 'Dashboard'
+
+2018-10-15 17:14:30 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/App/Activity/ActivityMain/message' is: 'Dashboard'
+
+2018-10-15 17:14:30 - [TEST_STEP][PASSED] - verifyEqual: Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+2018-10-15 17:14:30 - [MESSAGE][PASSED] - Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+2018-10-15 17:14:30 - [TEST_STEP][PASSED] - Statement - btnText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(button, 10): Text of element 'Object Repository/Application/App/Activity/ActivityMain/button' is: 'Click!'
+
+2018-10-15 17:14:30 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/App/Activity/ActivityMain/button' is: 'Click!'
+
+2018-10-15 17:14:30 - [TEST_STEP][PASSED] - verifyEqual: Actual object 'Click!' and expected object 'Click!' are equal
+
+2018-10-15 17:14:30 - [MESSAGE][PASSED] - Actual object 'Click!' and expected object 'Click!' are equal
+
+2018-10-15 17:14:30 - [TEST_STEP][PASSED] - tap: Tapped on element 'Object Repository/Application/App/Activity/ActivityMain/button'
+
+2018-10-15 17:14:31 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/App/Activity/ActivityMain/button'
+
+2018-10-15 17:14:31 - [TEST_STEP][PASSED] - Statement - btnText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(button, 10): Text of element 'Object Repository/Application/App/Activity/ActivityMain/button' is: 'Clicked'
+
+2018-10-15 17:14:31 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/App/Activity/ActivityMain/button' is: 'Clicked'
+
+2018-10-15 17:14:31 - [TEST_STEP][PASSED] - verifyEqual: Actual object 'Clicked' and expected object 'Clicked' are equal
+
+2018-10-15 17:14:31 - [MESSAGE][PASSED] - Actual object 'Clicked' and expected object 'Clicked' are equal
+
+2018-10-15 17:14:31 - [TEST_STEP][PASSED] - closeApplication: Close app successfully
+
+2018-10-15 17:14:32 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-10-15 17:14:07 - [TEST_SUITE][PASSED] - Sample Test: Test Cases/Sample]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
