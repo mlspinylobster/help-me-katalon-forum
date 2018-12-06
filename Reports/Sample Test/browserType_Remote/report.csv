@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Sample Test,,,2018-12-05 19:43:06,2018-12-05 19:43:22,16.003s,FAILED
+,,,,,,
+Test Cases/Sample,,,2018-12-05 19:43:18,2018-12-05 19:43:19,0.471s,FAILED
+"Statement - appPath = com.kms.katalon.core.util.internal.PathUtil.relativeToAbsolutePath(G_AndroidApp, com.kms.katalon.core.configuration.RunConfiguration.getProjectDir())",,,2018-12-05 19:43:18,2018-12-05 19:43:18,0.001s,PASSED
+startApplication,,,2018-12-05 19:43:18,2018-12-05 19:43:19,0.165s,FAILED

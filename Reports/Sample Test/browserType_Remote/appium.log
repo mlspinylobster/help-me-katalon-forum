@@ -1,0 +1,195 @@
+[Appium] Welcome to Appium v1.8.1 (REV a33909737958ca807e4b1c2791a1f137fc489c3d)
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+[HTTP] --> POST /wd/hub/session
+[HTTP] {"desiredCapabilities":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"capabilities":{"desiredCapabilities":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"firstMatch":[{"platformName":"android"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},null,{"desiredCapabilities":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"firstMatch":[{"platformName":"android"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1544006589288 (19:43:09 GMT+0900 (GMT+09:00))
+[Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+[Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["app","autoGrantPermissions","deviceName","fullReset","newCommandTimeout","noReset","platform","platformName","udid"]. Falling back to JSONWP protocol.
+[Appium] Creating new AndroidDriver (v2.7.0) session
+[Appium] Capabilities:
+[Appium]   app: /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk
+[Appium]   autoGrantPermissions: true
+[Appium]   deviceName: LENOVO Lenovo YT3-X50F (Android 5.1.1)
+[Appium]   fullReset: false
+[Appium]   newCommandTimeout: 1800
+[Appium]   noReset: true
+[Appium]   platform: ANDROID
+[Appium]   platformName: Android
+[Appium]   udid: 81d7d62f
+[debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"app":"/Users/satoshiisemu...
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: platform.
+[BaseDriver] Session created with session id: e06e62c8-b40d-4134-a3ae-cca8dadcd3a5
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 9.0.1
+[ADB] Checking whether adb is present
+[ADB] Found 4 'build-tools' folders under '/Users/satoshiisemura/Library/Android/sdk' (newest first):
+[ADB]     /Users/satoshiisemura/Library/Android/sdk/build-tools/28.0.3
+[ADB]     /Users/satoshiisemura/Library/Android/sdk/build-tools/28.0.2
+[ADB]     /Users/satoshiisemura/Library/Android/sdk/build-tools/26.0.2
+[ADB]     /Users/satoshiisemura/Library/Android/sdk/build-tools/26.0.0
+[ADB] Using adb from /Users/satoshiisemura/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[AndroidDriver] Using device: 81d7d62f
+[debug] [ADB] Setting device id to 81d7d62f
+[BaseDriver] Using local app '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk'
+[debug] [AndroidDriver] Checking whether app is actually present
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f wait-for-device'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell echo ping'
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell pm list packages io.appium.settings'
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'io.appium.settings'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys package io.appium.settings'
+[ADB] Checking whether aapt is present
+[ADB] Using aapt from /Users/satoshiisemura/Library/Android/sdk/build-tools/28.0.3/aapt
+[debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell ps'
+[debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.build.version.sdk'
+[debug] [ADB] Current device property 'ro.build.version.sdk': 22
+[debug] [ADB] Device API level: 22
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell settings put secure mock_location 1'
+[AndroidDriver] setDeviceLanguageCountry requires language or country.
+[AndroidDriver] Got language: 'null' and country: 'null'
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Getting install status for io.appium.unlock
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell pm list packages io.appium.unlock'
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'io.appium.unlock'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys package io.appium.unlock'
+[debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[ADB] Getting device platform version
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.build.version.release'
+[debug] [ADB] Current device property 'ro.build.version.release': 5.1.1
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell wm size'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.product.model'
+[debug] [ADB] Current device property 'ro.product.model': Lenovo YT3-X50F
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.product.manufacturer'
+[debug] [ADB] Current device property 'ro.product.manufacturer': LENOVO
+[debug] [AndroidDriver] Parsing package and activity from app manifest
+[ADB] Using apkanalyzer from /Users/satoshiisemura/Library/Android/sdk/tools/bin/apkanalyzer
+[debug] [ADB] Starting '/Users/satoshiisemura/Library/Android/sdk/tools/bin/apkanalyzer' with args ["-h","manifest","print","/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk"]
+[ADB] Using the alternative activity name detection method because of: Command '/Users/satoshiisemura/Library/Android/sdk/tools/bin/apkanalyzer -h manifest print /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' exited with code 1
+[ADB] Extracting package and launch activity from manifest
+[ADB] Package name: 'com.example.ebi.sampleappforkatalon'
+[ADB] Main activity name: 'com.example.ebi.sampleappforkatalon.MainActivity'
+[debug] [AndroidDriver] Parsed package and activity are: com.example.ebi.sampleappforkatalon/com.example.ebi.sampleappforkatalon.MainActivity
+[debug] [ADB] Getting install status for com.example.ebi.sampleappforkatalon
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell pm list packages com.example.ebi.sampleappforkatalon'
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'com.example.ebi.sampleappforkatalon'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys package com.example.ebi.sampleappforkatalon'
+[debug] [ADB] The installed 'com.example.ebi.sampleappforkatalon' package does not require upgrade ('1.0.0' >= '1.0.0')
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell rm -rf /data/local/tmp/strings.json'
+[debug] [AndroidDriver] Extracting strings from apk
+[debug] [AndroidDriver] /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk
+[debug] [AndroidDriver] null
+[debug] [AndroidDriver] /var/folders/dw/v489nbjn67b4845ptmwk4ps40000gp/T/com.example.ebi.sampleappforkatalon
+[debug] [ADB] Extracting strings for language: default
+[ADB] Successfully extracted 43 strings from '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' resources for '(default)' configuration
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f push /var/folders/dw/v489nbjn67b4845ptmwk4ps40000gp/T/com.example.ebi.sampleappforkatalon/strings.json /data/local/tmp'
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f forward tcp\:4724 tcp\:4724'
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f push /Users/satoshiisemura/.ndenv/versions/10.9.0/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell ps'
+[debug] [ADB] Attempting to kill process 5573
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -0 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[ADB] Cannot kill process 5573 in 1000 ms. Trying to force kill...
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -9 5573'
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","81d7d62f","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.example.ebi.sampleappforkatalon","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys window'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 22
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell am start -W -n com.example.ebi.sampleappforkatalon/com.example.ebi.sampleappforkatalon.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'com.example.ebi.sampleappforkatalon' and activity: 'com.example.ebi.sampleappforkatalon.MainActivity' to be focused
+[debug] [ADB] Possible activities, to be checked: 'com.example.ebi.sampleappforkatalon.MainActivity', 'com.example.ebi.sampleappforkatalon.com.example.ebi.sampleappforkatalon.MainActivity'
+[debug] [ADB] Getting focused package and activity
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys window windows'
+[debug] [ADB] Found package: 'com.example.ebi.sampleappforkatalon' and fully qualified activity name : 'com.example.ebi.sampleappforkatalon.MainActivity'
+[Appium] New AndroidDriver session created successfully, session e06e62c8-b40d-4134-a3ae-cca8dadcd3a5 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1544006598166 (19:43:18 GMT+0900 (GMT+09:00))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- POST /wd/hub/session 200 8888 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/status
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getStatus() with args: []
+[debug] [W3C] Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":"a33909737958ca807e4b1c2791a1f137fc489c3d"}}
+[HTTP] <-- GET /wd/hub/status 200 51 ms - 93
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/e06e62c8-b40d-4134-a3ae-cca8dadcd3a5/timeouts
+[HTTP] {"type":"implicit","ms":30000}
+[debug] [W3C] Bad parameters: BadParametersError: Parameters were incorrect. We wanted "W3C protocol expects any of script, pageLoad or implicit to be set" and you sent {"type":"implicit","ms":30000}
+[HTTP] <-- POST /wd/hub/session/e06e62c8-b40d-4134-a3ae-cca8dadcd3a5/timeouts 400 19 ms - 5284
+[HTTP] 
+[HTTP] --> DELETE /wd/hub/session/e06e62c8-b40d-4134-a3ae-cca8dadcd3a5
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.deleteSession() with args: ["e06e62c8-b40d-4134-a3ae-cca8dadcd3a5"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1544006599083 (19:43:19 GMT+0900 (GMT+09:00))
+[Appium] Removing session e06e62c8-b40d-4134-a3ae-cca8dadcd3a5 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell am force-stop com.example.ebi.sampleappforkatalon'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell input keyevent 3'
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell ps'
+[debug] [ADB] Attempting to kill process 5573
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -0 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[ADB] Cannot kill process 5573 in 1000 ms. Trying to force kill...
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -9 5573'
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Running '/Users/satoshiisemura/Library/Android/sdk/platform-tools/adb -P 5037 -s 81d7d62f shell am force-stop io.appium.unlock'
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1544006602433 (19:43:22 GMT+0900 (GMT+09:00))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/e06e62c8-b40d-4134-a3ae-cca8dadcd3a5 200 3352 ms - 76
+[HTTP] 
+[Appium] Received SIGINT - shutting down

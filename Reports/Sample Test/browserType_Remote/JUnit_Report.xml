@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Sample Test" time="20" tests="0" failures="1" errors="0">
-   <testsuite name="Sample Test" tests="0" failures="1" errors="0" time="20" timestamp="2018-10-15 17:45:01" hostname="satoshiisemura - 192.168.10.3" id="Test Suites/Sample Test">
+<testsuites name="Sample Test" time="16" tests="0" failures="1" errors="0">
+   <testsuite name="Sample Test" tests="0" failures="1" errors="0" time="16" timestamp="2018-12-05 19:43:06" hostname="satoshiisemura - 192.168.10.3" id="Test Suites/Sample Test">
       <properties>
          <property name="deviceName" value="null"/>
          <property name="devicePlatform" value=""/>
-         <property name="logFolder" value="/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181015_174454"/>
-         <property name="logFiles" value="/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181015_174454/execution0.log"/>
+         <property name="logFolder" value="/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181205_194302"/>
+         <property name="logFiles" value="/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/Reports/Sample Test/20181205_194302/execution0.log"/>
          <property name="attachments" value=""/>
          <property name="hostName" value="satoshiisemura - 192.168.10.3"/>
          <property name="os" value="Mac OS X 64bit"/>
-         <property name="katalonVersion" value="5.8.0.1"/>
+         <property name="katalonVersion" value="4.1.0.2"/>
          <property name="deviceOS" value="null"/>
          <property name="appiumVersion" value="1.8.1"/>
          <property name="deviceModel" value="null"/>
@@ -48,7 +48,7 @@
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
-	at TempTestSuite1539593094595.run(TempTestSuite1539593094595.groovy:36)
+	at TempTestSuite1544006582239.run(TempTestSuite1544006582239.groovy:36)
 	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
@@ -64,7 +64,7 @@
 	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
 	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
 )"/>
-         <system-out><![CDATA[2018-10-15 17:45:21 - [TEST_CASE][FAILED] - Test Cases/Sample: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
+         <system-out><![CDATA[2018-12-05 19:43:18 - [TEST_CASE][FAILED] - Test Cases/Sample: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
 	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
@@ -92,7 +92,7 @@
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
-	at TempTestSuite1539593094595.run(TempTestSuite1539593094595.groovy:36)
+	at TempTestSuite1544006582239.run(TempTestSuite1544006582239.groovy:36)
 	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
@@ -109,12 +109,12 @@
 	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
 )
 
-2018-10-15 17:45:21 - [TEST_STEP][PASSED] - Statement - appPath = com.kms.katalon.core.util.internal.PathUtil.relativeToAbsolutePath(G_AndroidApp, com.kms.katalon.core.configuration.RunConfiguration.getProjectDir()): null
+2018-12-05 19:43:18 - [TEST_STEP][PASSED] - Statement - appPath = com.kms.katalon.core.util.internal.PathUtil.relativeToAbsolutePath(G_AndroidApp, com.kms.katalon.core.configuration.RunConfiguration.getProjectDir()): null
 
-2018-10-15 17:45:21 - [TEST_STEP][FAILED] - startApplication: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
+2018-12-05 19:43:18 - [TEST_STEP][FAILED] - startApplication: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
 
-2018-10-15 17:45:21 - [MESSAGE][FAILED] - Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)]]></system-out>
-         <system-err><![CDATA[2018-10-15 17:45:21 - [TEST_CASE][FAILED] - Test Cases/Sample: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
+2018-12-05 19:43:19 - [MESSAGE][FAILED] - Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)]]></system-out>
+         <system-err><![CDATA[2018-12-05 19:43:18 - [TEST_CASE][FAILED] - Test Cases/Sample: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
 	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
@@ -142,7 +142,7 @@
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
-	at TempTestSuite1539593094595.run(TempTestSuite1539593094595.groovy:36)
+	at TempTestSuite1544006582239.run(TempTestSuite1544006582239.groovy:36)
 	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
@@ -159,7 +159,7 @@
 	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
 )]]></system-err>
       </testcase>
-      <system-out><![CDATA[2018-10-15 17:45:01 - [TEST_SUITE][FAILED] - Sample Test: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
+      <system-out><![CDATA[2018-12-05 19:43:06 - [TEST_SUITE][FAILED] - Sample Test: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
 	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
@@ -187,7 +187,7 @@
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
-	at TempTestSuite1539593094595.run(TempTestSuite1539593094595.groovy:36)
+	at TempTestSuite1544006582239.run(TempTestSuite1544006582239.groovy:36)
 	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
@@ -203,7 +203,7 @@
 	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
 	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
 )]]></system-out>
-      <system-err><![CDATA[2018-10-15 17:45:01 - [TEST_SUITE][FAILED] - Sample Test: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
+      <system-err><![CDATA[2018-12-05 19:43:06 - [TEST_SUITE][FAILED] - Sample Test: Test Cases/Sample FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to start app at: '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' (Root cause: java.lang.IllegalArgumentException: The mobile device is missing. Please select the mobile device to be executed and try again.)
 	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
 	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
@@ -231,7 +231,7 @@
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
-	at TempTestSuite1539593094595.run(TempTestSuite1539593094595.groovy:36)
+	at TempTestSuite1544006582239.run(TempTestSuite1544006582239.groovy:36)
 	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
 	at groovy.lang.GroovyShell.run(GroovyShell.java:507)

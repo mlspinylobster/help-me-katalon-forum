@@ -1,0 +1,721 @@
+[Appium] Welcome to Appium v1.8.1 (REV a33909737958ca807e4b1c2791a1f137fc489c3d)
+[Appium] Non-default server args:
+[Appium]   port: 64625
+[Appium]   chromeDriverPort: 64626
+[Appium]   tmpDir: /var/folders/dw/v489nbjn67b4845ptmwk4ps40000gp/T//Katalon/Appium/Temp1544007213208
+[Appium] Appium REST http interface listener started on 0.0.0.0:64625
+[HTTP] --> GET /wd/hub/status
+[HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":"a33909737958ca807e4b1c2791a1f137fc489c3d"}}
+[HTTP] <-- GET /wd/hub/status 200 29 ms - 121
+[HTTP] 
+[HTTP] --> POST /wd/hub/session
+[HTTP] {"desiredCapabilities":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"capabilities":{"desiredCapabilities":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"firstMatch":[{"platformName":"android"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},null,{"desiredCapabilities":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"firstMatch":[{"platformName":"android"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1544007217484 (19:53:37 GMT+0900 (JST))
+[Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+[Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["app","autoGrantPermissions","deviceName","fullReset","newCommandTimeout","noReset","platform","platformName","udid"]. Falling back to JSONWP protocol.
+[Appium] Creating new AndroidDriver (v2.7.0) session
+[Appium] Capabilities:
+[Appium]   app: /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk
+[Appium]   autoGrantPermissions: true
+[Appium]   deviceName: LENOVO Lenovo YT3-X50F (Android 5.1.1)
+[Appium]   fullReset: false
+[Appium]   newCommandTimeout: 1800
+[Appium]   noReset: true
+[Appium]   platform: ANDROID
+[Appium]   platformName: Android
+[Appium]   udid: 81d7d62f
+[debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"app":"/Users/satoshiisemu...
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: platform.
+[BaseDriver] Session created with session id: ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_181
+[ADB] Checking whether adb is present
+[ADB] Found 1 'build-tools' folders under '/Users/satoshiisemura/.katalon/tools/android_sdk' (newest first):
+[ADB]     /Users/satoshiisemura/.katalon/tools/android_sdk/build-tools/28.0.2
+[ADB] Using adb from /Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[AndroidDriver] Using device: 81d7d62f
+[debug] [ADB] Setting device id to 81d7d62f
+[BaseDriver] Using local app '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk'
+[debug] [AndroidDriver] Checking whether app is actually present
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f wait-for-device'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell echo ping'
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell pm list packages io.appium.settings'
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'io.appium.settings'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys package io.appium.settings'
+[ADB] Checking whether aapt is present
+[ADB] Using aapt from /Users/satoshiisemura/.katalon/tools/android_sdk/build-tools/28.0.2/aapt
+[debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell ps'
+[debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.build.version.sdk'
+[debug] [ADB] Current device property 'ro.build.version.sdk': 22
+[debug] [ADB] Device API level: 22
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell settings put secure mock_location 1'
+[AndroidDriver] setDeviceLanguageCountry requires language or country.
+[AndroidDriver] Got language: 'null' and country: 'null'
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Getting install status for io.appium.unlock
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell pm list packages io.appium.unlock'
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'io.appium.unlock'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys package io.appium.unlock'
+[debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[ADB] Getting device platform version
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.build.version.release'
+[debug] [ADB] Current device property 'ro.build.version.release': 5.1.1
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell wm size'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.product.model'
+[debug] [ADB] Current device property 'ro.product.model': Lenovo YT3-X50F
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell getprop ro.product.manufacturer'
+[debug] [ADB] Current device property 'ro.product.manufacturer': LENOVO
+[debug] [AndroidDriver] Parsing package and activity from app manifest
+[ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer in /Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/apkanalyzer,/Users/satoshiisemura/.katalon/tools/android_sdk/emulator/apkanalyzer,/Users/satoshiisemura/.katalon/tools/android_sdk/tools/apkanalyzer,/Users/satoshiisemura/.katalon/tools/android_sdk/tools/bin/apkanalyzer,/Users/satoshiisemura/.katalon/tools/android_sdk/build-tools/28.0.2/apkanalyzer. Do you have the Android SDK installed at '/Users/satoshiisemura/.katalon/tools/android_sdk'?
+[ADB] Extracting package and launch activity from manifest
+[ADB] Package name: 'com.example.ebi.sampleappforkatalon'
+[ADB] Main activity name: 'com.example.ebi.sampleappforkatalon.MainActivity'
+[debug] [AndroidDriver] Parsed package and activity are: com.example.ebi.sampleappforkatalon/com.example.ebi.sampleappforkatalon.MainActivity
+[debug] [ADB] Getting install status for com.example.ebi.sampleappforkatalon
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell pm list packages com.example.ebi.sampleappforkatalon'
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'com.example.ebi.sampleappforkatalon'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys package com.example.ebi.sampleappforkatalon'
+[debug] [ADB] The installed 'com.example.ebi.sampleappforkatalon' package does not require upgrade ('1.0.0' >= '1.0.0')
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell rm -rf /data/local/tmp/strings.json'
+[debug] [AndroidDriver] Extracting strings from apk
+[debug] [AndroidDriver] /Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk
+[debug] [AndroidDriver] null
+[debug] [AndroidDriver] /var/folders/dw/v489nbjn67b4845ptmwk4ps40000gp/T/Katalon/Appium/Temp1544007213208/com.example.ebi.sampleappforkatalon
+[debug] [ADB] Extracting strings for language: default
+[ADB] Successfully extracted 43 strings from '/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk' resources for '(default)' configuration
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f push /var/folders/dw/v489nbjn67b4845ptmwk4ps40000gp/T/Katalon/Appium/Temp1544007213208/com.example.ebi.sampleappforkatalon/strings.json /data/local/tmp'
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f forward tcp\:4724 tcp\:4724'
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f push /Users/satoshiisemura/.ndenv/versions/10.9.0/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell ps'
+[debug] [ADB] Attempting to kill process 5573
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -0 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[ADB] Cannot kill process 5573 in 1000 ms. Trying to force kill...
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -9 5573'
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","81d7d62f","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.example.ebi.sampleappforkatalon","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys window'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 22
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell am start -W -n com.example.ebi.sampleappforkatalon/com.example.ebi.sampleappforkatalon.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'com.example.ebi.sampleappforkatalon' and activity: 'com.example.ebi.sampleappforkatalon.MainActivity' to be focused
+[debug] [ADB] Possible activities, to be checked: 'com.example.ebi.sampleappforkatalon.MainActivity', 'com.example.ebi.sampleappforkatalon.com.example.ebi.sampleappforkatalon.MainActivity'
+[debug] [ADB] Getting focused package and activity
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell dumpsys window windows'
+[debug] [ADB] Found package: 'com.example.ebi.sampleappforkatalon' and fully qualified activity name : 'com.example.ebi.sampleappforkatalon.MainActivity'
+[Appium] New AndroidDriver session created successfully, session ee64fe20-fe71-4a33-84a1-1cb2ae66108b added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1544007225492 (19:53:45 GMT+0900 (JST))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- POST /wd/hub/session 200 8010 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/status
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getStatus() with args: []
+[debug] [W3C] Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":"a33909737958ca807e4b1c2791a1f137fc489c3d"}}
+[HTTP] <-- GET /wd/hub/status 200 26 ms - 93
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/timeouts
+[HTTP] {"type":"implicit","ms":30000}
+[debug] [W3C] Bad parameters: BadParametersError: Parameters were incorrect. We wanted "W3C protocol expects any of script, pageLoad or implicit to be set" and you sent {"type":"implicit","ms":30000}
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/timeouts 400 17 ms - 5388
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getWindowSize() with args: ["current","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1216,"width":800}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1216,"width":800}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size 200 35 ms - 99
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements
+[HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)"}
+[debug] [W3C] Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").resourceId("com.example.ebi.sampleappforkatalon:id/message").instance(1)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").resourceId("com.example.ebi.sampleappforkatalon:id/message").instance(1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "com.example.ebi.sampleappforkatalon:id/message"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 1
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.TextView, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.TextView, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.TextView, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"1"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"1"}]
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements 200 104 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 4 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 5 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 4 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/1/location
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getLocation() with args: ["1","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":0,"y":139}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getLocation() result: {"x":0,"y":139}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/1/location 200 27 ms - 87
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/1/text
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getText() with args: ["1","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"Home"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Home"
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/1/text 200 32 ms - 78
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getWindowSize() with args: ["current","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1216,"width":800}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1216,"width":800}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size 200 11 ms - 99
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements
+[HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.FrameLayout\").resourceId(\"com.example.ebi.sampleappforkatalon:id/navigation_dashboard\").instance(6)"}
+[debug] [W3C] Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.FrameLayout\").resourceId(\"com.example.ebi.sampleappforkatalon:id/navigation_dashboard\").instance(6)","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.FrameLayout\").resourceId(\"com.example.ebi.sampleappforkatalon:id/navigation_dashboard\").instance(6)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.FrameLayout\").resourceId(\"com.example.ebi.sampleappforkatalon:id/navigation_dashboard\").instance(6)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.FrameLayout").resourceId("com.example.ebi.sampleappforkatalon:id/navigation_dashboard").instance(6)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.FrameLayout").resourceId("com.example.ebi.sampleappforkatalon:id/navigation_dashboard").instance(6)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.FrameLayout"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.FrameLayout"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "com.example.ebi.sampleappforkatalon:id/navigation_dashboard"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 6
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.FrameLayout, INSTANCE=6, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/navigation_dashboard]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.FrameLayout, INSTANCE=6, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/navigation_dashboard]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.FrameLayout, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/navigation_dashboard]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.FrameLayout, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/navigation_dashboard]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"2"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"2"}]
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements 200 165 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 5 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/2/location
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getLocation() with args: ["2","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":287,"y":1141}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getLocation() result: {"x":287,"y":1141}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/2/location 200 30 ms - 90
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/touch/perform
+[HTTP] {"actions":[{"action":"tap","options":{"element":"2","x":1,"y":1}}]}
+[debug] [W3C] Calling AppiumDriver.performTouch() with args: [[{"action":"tap","options":{"element":"2","x":1,"y":1}}],"ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":287,"y":1141}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2","x":288,"y":1142}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2","x":288,"y":1142}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.performTouch() result: null
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/touch/perform 200 255 ms - 76
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getWindowSize() with args: ["current","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1216,"width":800}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1216,"width":800}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size 200 12 ms - 99
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements
+[HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)"}
+[debug] [W3C] Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").resourceId(\"com.example.ebi.sampleappforkatalon:id/message\").instance(1)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.TextView").resourceId("com.example.ebi.sampleappforkatalon:id/message").instance(1)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.TextView").resourceId("com.example.ebi.sampleappforkatalon:id/message").instance(1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.TextView"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.TextView"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "com.example.ebi.sampleappforkatalon:id/message"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 1
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.TextView, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.TextView, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.TextView, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/message]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"3"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"3"}]
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements 200 696 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 2 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 9 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 4 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/3/location
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getLocation() with args: ["3","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":0,"y":139}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getLocation() result: {"x":0,"y":139}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/3/location 200 26 ms - 87
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/3/text
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getText() with args: ["3","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"Dashboard"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Dashboard"
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/3/text 200 43 ms - 83
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getWindowSize() with args: ["current","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1216,"width":800}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1216,"width":800}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size 200 20 ms - 99
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements
+[HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)"}
+[debug] [W3C] Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.Button").resourceId("com.example.ebi.sampleappforkatalon:id/button").instance(0)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.Button").resourceId("com.example.ebi.sampleappforkatalon:id/button").instance(0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.Button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.Button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "com.example.ebi.sampleappforkatalon:id/button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"4"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"4"}]
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements 200 107 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 2 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 2 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/4/location
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getLocation() with args: ["4","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":342,"y":635}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getLocation() result: {"x":342,"y":635}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/4/location 200 32 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/4/text
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getText() with args: ["4","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"Click!"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Click!"
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/4/text 200 43 ms - 80
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getWindowSize() with args: ["current","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1216,"width":800}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1216,"width":800}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size 200 14 ms - 99
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements
+[HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)"}
+[debug] [W3C] Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.Button").resourceId("com.example.ebi.sampleappforkatalon:id/button").instance(0)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.Button").resourceId("com.example.ebi.sampleappforkatalon:id/button").instance(0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.Button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.Button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "com.example.ebi.sampleappforkatalon:id/button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"5"}]}
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"5"}]
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements 200 66 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 4 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 2 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 4 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 7 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/5/location
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getLocation() with args: ["5","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":342,"y":635}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getLocation() result: {"x":342,"y":635}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/5/location 200 24 ms - 89
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/touch/perform
+[HTTP] {"actions":[{"action":"tap","options":{"element":"5","x":1,"y":1}}]}
+[debug] [W3C] Calling AppiumDriver.performTouch() with args: [[{"action":"tap","options":{"element":"5","x":1,"y":1}}],"ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":342,"y":635}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"5","x":343,"y":636}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5","x":343,"y":636}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.performTouch() result: null
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/touch/perform 200 197 ms - 76
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getWindowSize() with args: ["current","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1216,"width":800}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1216,"width":800}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/window/current/size 200 10 ms - 99
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements
+[HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)"}
+[debug] [W3C] Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.Button\").resourceId(\"com.example.ebi.sampleappforkatalon:id/button\").instance(0)","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.Button").resourceId("com.example.ebi.sampleappforkatalon:id/button").instance(0)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.Button").resourceId("com.example.ebi.sampleappforkatalon:id/button").instance(0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.Button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.Button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "com.example.ebi.sampleappforkatalon:id/button"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=0, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.Button, INSTANCE=1, RESOURCE_ID=com.example.ebi.sampleappforkatalon:id/button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"6"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"6"}]
+[HTTP] <-- POST /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/elements 200 540 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 2 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 5 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"LENOVO Lenovo YT3-X50F (Android 5.1.1)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"81d7d62f"},"app":"/Users/satoshiisemura/dev/katalon/KatalonAndroidSample/androidapp/Sample.apk","autoGrantPermissions":true,"deviceName":"81d7d62f","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platformName":"Android","udid":"81d7d62f","deviceUDID":"81d7d62f","platformVersion":"5.1.1","deviceScreenSize":"800x1280","deviceModel":"Lenovo YT3-X50F","deviceManufacturer":"LENOVO","appPackage":"com.example.ebi.sampleappforkatalon","appWaitPackage":"com.example.ebi.sampleappforkatalon","appActivity":"com.example.ebi.sample...
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3 ms - 1190
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/6/location
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getLocation() with args: ["6","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getLocation","params":{"elementId":"6"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"6"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getLocation
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"x":342,"y":635}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getLocation() result: {"x":342,"y":635}
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/6/location 200 22 ms - 89
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/6/text
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.getText() with args: ["6","ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"6"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"6"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"Clicked"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "Clicked"
+[HTTP] <-- GET /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b/element/6/text 200 30 ms - 81
+[HTTP] 
+[HTTP] --> DELETE /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b
+[HTTP] {}
+[debug] [W3C] Calling AppiumDriver.deleteSession() with args: ["ee64fe20-fe71-4a33-84a1-1cb2ae66108b"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1544007229119 (19:53:49 GMT+0900 (JST))
+[Appium] Removing session ee64fe20-fe71-4a33-84a1-1cb2ae66108b from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell am force-stop com.example.ebi.sampleappforkatalon'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell input keyevent 3'
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell ps'
+[debug] [ADB] Attempting to kill process 5573
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -0 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill 5573'
+[ADB] Cannot kill process 5573 in 1000 ms. Trying to force kill...
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell kill -9 5573'
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Running '/Users/satoshiisemura/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 81d7d62f shell am force-stop io.appium.unlock'
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1544007232601 (19:53:52 GMT+0900 (JST))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/ee64fe20-fe71-4a33-84a1-1cb2ae66108b 200 3484 ms - 76
+[HTTP] 

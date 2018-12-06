@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Sample Test,,,2018-12-05 19:53:31,2018-12-05 19:53:52,21.199s,PASSED
+,,,,,,
+Test Cases/Sample,,,2018-12-05 19:53:32,2018-12-05 19:53:52,20.275s,PASSED
+"Statement - appPath = com.kms.katalon.core.util.internal.PathUtil.relativeToAbsolutePath(G_AndroidApp, com.kms.katalon.core.configuration.RunConfiguration.getProjectDir())",,,2018-12-05 19:53:32,2018-12-05 19:53:32,0.016s,PASSED
+startApplication,,,2018-12-05 19:53:32,2018-12-05 19:53:45,12.902s,PASSED
+Statement - message = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Application/App/Activity/ActivityMain/message),,,2018-12-05 19:53:45,2018-12-05 19:53:45,0.040s,PASSED
+Statement - navButton = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Application/App/Activity/ActivityMain/navButton),,,2018-12-05 19:53:45,2018-12-05 19:53:45,0.030s,PASSED
+Statement - button = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Application/App/Activity/ActivityMain/button),,,2018-12-05 19:53:45,2018-12-05 19:53:45,0.008s,PASSED
+"Statement - messageText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(message, 10)",,,2018-12-05 19:53:45,2018-12-05 19:53:46,0.543s,PASSED
+verifyEqual,,,2018-12-05 19:53:46,2018-12-05 19:53:46,0.050s,PASSED
+tap,,,2018-12-05 19:53:46,2018-12-05 19:53:46,0.567s,PASSED
+"Statement - messageText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(message, 10)",,,2018-12-05 19:53:46,2018-12-05 19:53:47,0.861s,PASSED
+verifyEqual,,,2018-12-05 19:53:47,2018-12-05 19:53:47,0.002s,PASSED
+"Statement - btnText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(button, 10)",,,2018-12-05 19:53:47,2018-12-05 19:53:48,0.271s,PASSED
+verifyEqual,,,2018-12-05 19:53:48,2018-12-05 19:53:48,0.003s,PASSED
+tap,,,2018-12-05 19:53:48,2018-12-05 19:53:48,0.378s,PASSED
+"Statement - btnText = com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(button, 10)",,,2018-12-05 19:53:48,2018-12-05 19:53:49,0.666s,PASSED
+verifyEqual,,,2018-12-05 19:53:49,2018-12-05 19:53:49,0.003s,PASSED
+closeApplication,,,2018-12-05 19:53:49,2018-12-05 19:53:52,3.524s,PASSED
