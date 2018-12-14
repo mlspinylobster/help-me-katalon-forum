@@ -1,6 +1,7 @@
-# Help!
+# ~~Help!~~
 
-I can't execute tests via Remote!
+~~I can't execute tests via Remote!~~
+**It resolved. Thanks a lot!**
 
 ## Test via Remote execution
 

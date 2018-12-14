@@ -35,6 +35,9 @@ class SettingRemoteAppiumDriver {
 	 */
 	@BeforeTestSuite
 	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
+		def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.G_AndroidApp, RunConfiguration.getProjectDir())
+		println "app path is: " + appPath
+		
 		println "checking whether any stored drivers exists..."
 		def storedDrivers = RunConfiguration.getStoredDrivers()
 		if (storedDrivers.size() > 0) {
@@ -45,6 +48,10 @@ class SettingRemoteAppiumDriver {
 		println "checking whether WebUI driver is specified..."
 		def exProps = RunConfiguration.getExecutionProperties()
 		if (exProps.drivers.system.WebUI == null) {
+			if (exProps.drivers.system.Mobile != null) {
+				println "Mobile driver is specified. starting Mobile driver"
+				Mobile.startApplication(appPath, false)
+			}
 			return;
 		}
 		
@@ -58,8 +65,6 @@ class SettingRemoteAppiumDriver {
 			println key + ": " + val
 			capabilities.setCapability(key, val)
 		}
-		def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.G_AndroidApp, RunConfiguration.getProjectDir())
-		println "app path is: " + appPath
 		capabilities.setCapability("app", appPath)
 		
 		def appiumUrl = exProps.remoteWebDriverUrl
