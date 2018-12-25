@@ -67,6 +67,9 @@ class SettingRemoteAppiumDriver {
 		}
 		capabilities.setCapability("app", appPath)
 		
+		def adbPort = System.getenv("adbPort")
+		if (adbPort != null) { capabilities.setCapability("adbPort", adbPort) }
+		
 		def appiumUrl = exProps.remoteWebDriverUrl
 		AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(appiumUrl))
 	}
